@@ -54,6 +54,21 @@
                 <div class="accordion-body">
                     <!-- Design HTML form that captures note-title and note-content as inputs
                          and saves the note when form is submitted -->
+                        <form action="#" onsubmit="saveNote()">
+                            <label for="TaskTitle">Please enter the Task Title   :</label>
+                            <input id="TaskTitle" type="text"><span id="titleSpan" style="color: red;"></span>
+                            <br>
+                            <label for="TaskDetails">Please enter the TaskDetails</label>
+                            <input id="TaskDetails" type="text"><span id="detailsSpan" style="color: red;"></span>
+                            <br>
+                            <br>
+                            <input type="submit" value="Add Note">
+                            <br>
+                        </form>
+                        <br>
+                       
+                        <button onclick="fetchNotes()">Display Task Details</button>
+
                     <!-- Ensure validations are applied to prevent form from 
                         submitting if the inputs are invalid -->
                 </div>
@@ -74,6 +89,7 @@
         crossorigin="anonymous"></script>
 
     <!-- link the script.js file to save and load notes -->
+    <script src="./js/script.js"></script>
 
 </body>
 
